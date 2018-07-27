@@ -1,1 +1,1 @@
-window.onscroll = function(){var top= document.documentElement.scrollTop || document.body.scrollTop; var atop=document.getElementById("atop");if( top >= 300 ) {atop.style="display:block";}else{atop.style="display:none";}}
+window.onscroll = function(){var top=document.documentElement.scrollTop || document.body.scrollTop; var atop=document.getElementById("atop"); if(top>=100){atop.style.display="block"; }else{atop.style.display="none"; } }

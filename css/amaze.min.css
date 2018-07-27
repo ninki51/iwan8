@@ -13,11 +13,12 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 	.amz-container{padding-left:1.5rem;padding-right:1.5rem}
 }
 /*清除悬浮*/
+.am-cf{overflow: hidden;}
 .am-cf:after,.am-cf:before{content:" ";display:table}
 .am-cf:after{clear:both}
 #amz-header .am-btn{border:none;float:right;margin-top:5px;margin-right:-5px}
 .am-btn{display:inline-block;margin-bottom:0;padding:.5em 1em;vertical-align:middle;font-size:1.6rem;font-weight:1500;line-height:1.2;text-align:center;white-space:nowrap;background-image:none;border:1px solid transparent;border-radius:0;cursor:pointer;outline:0;-webkit-appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:background-color .3s ease-out,border-color .3s ease-out;transition:background-color .3s ease-out,border-color .3s ease-out}
-.am-btn-primary{color:#fff;background:#000/*0e90d2*/;}
+.am-btn-primary{color:#fff;background:#444/*0e90d2*/;}
 .am-btn-primary:hover,.am-btn-primary:focus{color:#fff;background-color:rgba(000,000,000,0.3);/*#0a6999*/}
 .am-btn:active:focus,.am-btn:focus{outline:thin dotted;outline:1px auto #777/*-webkit-focus-ring-color*/;outline-offset:-2px}
 .am-icon-bars:before{content:"|||";}
@@ -88,7 +89,6 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 	.amz-notify{line-height:40px}
 	.amz-notify .am-btn,.amz-notify .am-form-field{height:40px;padding-top:0;padding-bottom:0}
 }
-.amz-features{padding:15px 0}
 .amz-features img{display:block;margin-left:auto;margin-right:auto}
 .doc-anchor:before,.external-link:after{display:inline-block;transform:translate(0,0);text-rendering:auto;-moz-osx-font-smoothing:grayscale}
 .amz-features h2{margin-top:10px}
@@ -145,8 +145,13 @@ h1 .doc-anchor{display:none}
 .amz-footer .amz-social{text-align:center;margin-bottom:10px}
 .amz-footer .amz-social li{display:inline-block;margin-left:10px}
 .amz-footer .amz-social li:first-child{margin-left:0}
-.amz-footer .amz-social a{display:block;height:40px;width:40px;background:url(../img/top.png) no-repeat;color:#555;font-size:28px;line-height:40px;background-position:-4px -2px;border-radius:50%;-webkit-transition:.15s;transition:.15s}
-.amz-footer .amz-social a:hover{background:rgba(255,255,255,.8)}
+.amz-footer .amz-social li:nth-child(1) a{background:url(../img/github30.png) no-repeat;background-position:center;-webkit-transition:.15s;transition:.15s}
+.amz-footer .amz-social li:nth-child(2) a{background:url(../img/mysql30.png) no-repeat;background-position:center;-webkit-transition:.15s;transition:.15s}
+.amz-footer .amz-social li:nth-child(3) a{background:url(../img/cocos30.png) no-repeat;background-position:center;-webkit-transition:.15s;transition:.15s}
+.amz-footer .amz-social li:nth-child(4) a{background:url(../img/vuejs30.png) no-repeat;background-position:center bottom;-webkit-transition:.15s;transition:.15s}
+.amz-footer .amz-social li{width: 40px;height:40px;border-radius:15%;background-color:rgba(0,0,0,.2);border-radius:50%;}
+.amz-footer .amz-social li a{display:block;width: 40px;height:40px;border-radius:50%;}
+.amz-footer .amz-social li a:hover{background-color:rgba(255,255,255,1)}
 @media print{
 	.amz-footer{display:none}
 }
